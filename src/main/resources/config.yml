@@ -1,0 +1,61 @@
+# Changes to 'enablePlugin' will require the plugin to be reloaded.
+# -
+# delay value is the ticks waiting until the blocks starts to regenerate
+# period value is the ticks waiting for each individual blocks regenerating
+# 20 Ticks = 1 Seconds
+# -
+# Add your worlds under the 'words:' list options to allow blocks to regenerate in those worlds
+# -
+# TnTs' & Creepers' explosion meeting a trigger circumstance will permanently do block damage  (blocks will not regen)
+# -
+# Visit https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html for a list of particles to use from (not case sensitive here)
+enablePlugin: true
+
+enable-Regen: true
+delay-: 1200
+period-: 20
+
+enablePRIMEDTNTRegen: true
+delayPRIMEDTNT: 1200
+periodPRIMEDTNT: 20
+
+enableWITHERRegen: true
+delayWITHER: 1200
+periodWITHER: 20
+
+enableWITHERSKULLRegen: true
+delayWITHERSKULL: 1200
+periodWITHERSKULL: 20
+
+enableCREEPERRegen: true
+delayCREEPER: 1200
+periodCREEPER: 20
+
+enableFIREBALLRegen: true
+delayFIREBALL: 1200
+periodFIREBALL: 20
+
+instantRegen: false
+disableExplosionBlockDamage: false
+enableParticles: false
+
+shiftGravityUp: true
+maxShiftGravityUp: 5
+
+particle: heart
+sound:
+  enable: true
+  sound: block_grass_place
+  volume: 1.0
+  pitch: 2.0
+  
+triggers:
+  world:
+    minY: 0.0
+    maxY: 256.0
+  world_nether:
+    minY: 0.0
+    maxY: 256.0
+  world_the_end:
+    minY: 0.0
+    maxY: 256.0

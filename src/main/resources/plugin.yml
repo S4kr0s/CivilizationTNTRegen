@@ -1,0 +1,7 @@
+name: TnTRegen
+version: 2.2
+description: Regen blocks destroyed by TnT
+main: de.sakros.civilizationtntregen.Main
+author: Jackalantern29, forked by Sakros
+api-version: 1.13
+softdepend: [CoreProtect, Lands]
